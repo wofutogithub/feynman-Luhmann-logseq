@@ -30,7 +30,7 @@ description: 书籍精读与卡片盒笔记工作流编排技能。当用户要�
 读 `references/04-cards.md`。从精读产物提炼 4 类原子卡片：金句卡/概念卡/方法卡/疑问卡。用 `scripts/make_card.py` 批量生成，产出 `03-卡片/`。一卡一想法，必带来源，2~4 个对象标签，双向链接指向相关概念。
 
 ### 5. Logseq 入库
-读 `references/05-logseq.md`。将卡片写入 Logseq 图库 `pages/`（书页+概念页+卡片页）；默认图库 `/Users/aidpsk/Documents/mylibrary` 可达时直接落库；不可达时降级输出到 `交付/logseq-import/` 供手动导入，并在交付说明中写清导入指引。
+读 `references/05-logseq.md`。将卡片写入 Logseq 图库 `pages/`（书页+概念页+卡片页）；本机图库路径（`LOGSEQ_GRAPH` 或部署时填写的默认路径）可达时直接落库；不可达时降级输出到 `交付/logseq-import/` 供手动导入，并在交付说明中写清导入指引。
 
 ### 6. 检索支持
 读 `references/06-retrieval.md`。默认档位 A：直接读图库文件回答；卡片超 500 张或用户明确要求语义检索时按档位 B（本地 RAG）搭建。

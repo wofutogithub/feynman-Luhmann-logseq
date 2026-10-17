@@ -2,7 +2,7 @@
 
 ## 图库解析
 
-- 优先读环境变量 `LOGSEQ_GRAPH`；未设置时按用户偏好默认 macOS 路径：`/Users/aidpsk/Documents/mylibrary`
+- 优先读环境变量 `LOGSEQ_GRAPH`；未设置时使用本机 Logseq 图库默认路径（部署时按本机实际情况填写，如 `/Users/<你的用户名>/Documents/mylibrary`）
 - 运行时先探测图库目录是否存在；**图库可达时卡片直接写入其 `pages/`（默认行为，书页+概念页+卡片页一并落库）**；不可达则降级输出（见下）
 
 ## pages/ 结构
