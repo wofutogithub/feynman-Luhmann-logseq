@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Logseq 本地图库（勿提交）
+*.logseq/
+logseq/graphs/
+
+# 临时与自检产物
+_shots/
+_backup/
