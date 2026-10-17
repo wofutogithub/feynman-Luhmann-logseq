@@ -124,8 +124,8 @@ cp -R doubao-book-zettelkasten \
 brew install pandoc
 # MinerU 按官方文档安装（PDF 扫描件场景）
 
-# 查看/设置 Logseq 图库路径（可选，默认读取环境变量 LOGSEQ_GRAPH）
-export LOGSEQ_GRAPH="/Users/you/Documents/mylogseq_graph"
+# 查看/设置 Logseq 图库路径（默认 macOS 路径：/Users/aidpsk/Documents/mylibrary）
+export LOGSEQ_GRAPH="/Users/aidpsk/Documents/mylibrary"
 ```
 
 ### 3.（可选）校验技能结构
@@ -157,7 +157,7 @@ AI 将按 SKILL.md 六阶段自动执行，最终交付：
 交付/logseq-import/    Logseq 导入目录（图库不可达时的降级输出，含导入说明）
 ```
 
-Logseq 图库可达时（配置了 `LOGSEQ_GRAPH` 或默认路径存在），卡片直接写入图库 `pages/`；不可达时输出 `交付/logseq-import/pages/`，用户手动并入图库、重启 Logseq 即完成索引。
+Logseq 图库可达时（配置了 `LOGSEQ_GRAPH` 或默认路径 `/Users/aidpsk/Documents/mylibrary` 存在），卡片**直接写入图库 `pages/`**（书页+概念页+卡片页一并落库，重启 Logseq 即索引）；不可达时输出 `交付/logseq-import/pages/`，用户手动并入图库即可。
 
 ---
 
