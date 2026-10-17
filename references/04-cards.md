@@ -27,7 +27,33 @@ source:: 第X章 p.Y
 tags:: #tag1 #tag2
 ```
 
-正文中指向相关概念的链接写明关系类型：related / extends / contradicts / supports。
+正文中指向相关概念的链接写明关系类型：related / extends / contradicts / supports（关系说明写入 content，links 字段只放页面名，保证双链不污染）。
+
+## 页面格式（Logseq 闪卡规范，2026-10 定稿）
+
+每张卡片页结构固定为：
+
+```markdown
+# 页面名
+
+- card-type:: quote|concept|method|question
+- book:: [[《书名》]]
+- source:: 第X章 p.Y
+- tags:: #tag1 #tag2
+
+### 卡片标题 #card
+- 答案行 1
+- 答案行 2（多行内容直接换行，每行是一个块，可被 Logseq 块引用）
+- 关联：
+  - [[概念-《书名》-相关概念]]
+```
+
+硬性规则：
+1. **标题用 h3 级**：`### 标题`（`###` 后必须加空格再写标题）
+2. **闪卡标识**：标题后加空格再写 `#card`，即 `### 标题 #card`，作为 Logseq 闪卡（Card）标记
+3. **答案统一缩进下一级**：标题下的答案内容全部用 `- ` bullet 起始（Logseq 树形浏览结构）；多行内容直接换行，每行独立成块，方便日后按块引用
+4. **关联二级缩进**：`- 关联：` 下的双链再缩进两级 `  - [[页面名]]`，作为子块
+5. 属性区（card-type/book/source/tags）位于页面首块，与正文间空一行
 
 ## 命名规范
 
